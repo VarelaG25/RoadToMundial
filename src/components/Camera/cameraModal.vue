@@ -51,7 +51,7 @@ const startAnalysis = () => {
     const interval = setInterval(() => {
         if (msgIndex < messages.length - 1) {
             msgIndex++
-            statusMessage.value = messages[msgIndex]
+            statusMessage.value = messages[msgIndex] || 'Procesando...'
         }
     }, 1600)
 
@@ -160,7 +160,7 @@ onBeforeUnmount(() => stopCamera())
                                     <div class="h-12 rounded-xl border border-slate-200 shadow-sm mb-1"
                                         :style="{ backgroundColor: color.hex }"></div>
                                     <p class="text-[8px] font-black text-slate-400 uppercase text-center">{{ color.hex
-                                        }}</p>
+                                    }}</p>
                                 </div>
                             </div>
 

@@ -10,7 +10,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 export default defineConfig({
   // SUSTITUYE 'nombre-de-tu-repo' por el nombre exacto de tu repositorio en GitHub
   // Si vas a usar un dominio propio o Vercel, puedes dejarlo como '/'
-  base: '/nombre-de-tu-repo/',
+  base: '/RoadToMundial/',
 
   plugins: [
     vue(),

@@ -13,11 +13,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('./components/Button/Button.vue')['default']
     CameraModal: typeof import('./components/Camera/cameraModal.vue')['default']
-    IconHeroiconsOutlineHome: typeof import('~icons/heroicons-outline/home')['default']
-    IconLucideHome: typeof import('~icons/lucide/home')['default']
-    IconLucideMoon: typeof import('~icons/lucide/moon')['default']
-    IconLucideSun: typeof import('~icons/lucide/sun')['default']
-    IconLucideUserCircle: typeof import('~icons/lucide/user-circle')['default']
     Input: typeof import('./components/Input/Input.vue')['default']
     LanguageSwitcher: typeof import('./components/LanguageSwitcher.vue')['default']
     ModeSwitcher: typeof import('./components/ModeSwitcher.vue')['default']
