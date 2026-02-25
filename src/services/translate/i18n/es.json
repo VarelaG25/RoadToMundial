@@ -1,0 +1,27 @@
+{
+  "APP": {
+    "TITLE": "Mi aplicación"
+  },
+  "LOGIN": {
+    "EMAIL": "Correo",
+    "PASSWORD": "Contraseña",
+    "BUTTON": "Entrar"
+  },
+  "NAVBAR": {
+    "SEARCH": "Buscar...",
+    "SEARCHOPT": "Buscar"
+  },
+  "USER_OPTIONS": {
+    "LOGIN": "Iniciar sesión",
+    "PROFILE": "Mi Perfil",
+    "SHOPPING": "Mis compras",
+    "WISHLIST": "Lista de deseados",
+    "LOGOUT": "Cerrar sesión"
+  },
+  "SIDEMENUBAR": {
+    "HOME": "Inicio",
+    "CATEGORIES": "Categorías",
+    "OFFERS": "Ofertas",
+    "CONTACT": "Contacto"
+  }
+}

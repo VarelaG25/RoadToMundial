@@ -1,0 +1,171 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --color-bg: #ffffff;
+    --color-primary: #111827;
+    --color-secondary: #3b82f6;
+    --color-bg-hover: #111827;
+    --color-primary-hover: #f3f4f6;
+    --color-button-bg: #000000;
+    --color-button-bg-hover: #ffffff;
+  }
+
+  .dark {
+    --color-bg: #111827;
+    --color-primary: #f3f4f6;
+    --color-secondary: #93c5fd;
+    --color-bg-hover: #ffffff;
+    --color-primary-hover: #1f2937;
+    --color-button-bg: #2563eb;
+    --color-button-bg-hover: #1e40af;
+  }
+
+  html,
+  body,
+  #app {
+    @apply h-full min-h-screen;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in srgb, var(--color-primary) 55%, transparent);
+  }
+}
+
+@layer components {
+  /* =========================
+     BOTÓN BASE
+     ========================= */
+  .btn {
+    @apply px-3 py-2 rounded-xl;
+  }
+
+  .btn--primary {
+    @apply bg-black text-white;
+  }
+
+  .btn--secondary {
+    @apply bg-gray-200 text-gray-800;
+  }
+
+  .btn--ghost {
+    @apply bg-transparent text-black;
+  }
+
+  .btn--search {
+    @apply bg-gray-100 text-gray-600;
+  }
+
+  /* =========================
+     INPUT WRAPPER
+     ========================= */
+  .input {
+    @apply flex flex-col gap-1;
+  }
+
+  /* =========================
+     LABEL
+     ========================= */
+  .input__label {
+    @apply text-sm font-medium;
+    color: var(--color-primary);
+  }
+
+  /* =========================
+     INPUT CONTAINER
+     ========================= */
+  .input__control {
+    @apply h-10 flex items-center gap-2 rounded-lg px-3 transition-colors;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-primary);
+  }
+
+  .input__control:focus-within {
+    border-color: var(--color-secondary);
+  }
+
+  /* =========================
+     SEARCH VARIANT
+     ========================= */
+  .input--search .input__control {
+    @apply rounded-l-lg rounded-r-none border-r-0;
+  }
+
+  /* =========================
+     ICON
+     ========================= */
+  .input__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-primary);
+    opacity: 0.6;
+  }
+
+  /* =========================
+     INPUT ELEMENT
+     ========================= */
+  .input__field {
+    @apply flex-1 outline-none bg-transparent text-sm;
+    color: var(--color-primary);
+  }
+
+  .input__field::placeholder {
+    opacity: 0.5;
+  }
+
+  /* =========================
+     DISABLED
+     ========================= */
+  .input--disabled .input__control {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .input--disabled .input__field {
+    cursor: not-allowed;
+  }
+}
+
+.istok-web-regular {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.istok-web-bold {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.istok-web-regular-italic {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.istok-web-bold-italic {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
